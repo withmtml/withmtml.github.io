@@ -24,7 +24,8 @@
       "biome.json",
       "tsconfig.json"
     ],
-    "indentStyle": "tab"
+    "indentStyle": "tab",
+    "indentWidth": 2
   },
   "organizeImports": {
     "enabled": true
@@ -41,8 +42,7 @@
   },
   "json": {
     "formatter": {
-      "indentStyle": "space",
-      "indentWidth": 2
+      "indentStyle": "space"
     }
   },
   "overrides": [
