@@ -17,10 +17,10 @@
     "include": [
       "./.vscode/*.json",
       "./.zed/*.json",
-      "./src",
+      "./src/**/*.ts",
+      "./src/**/*.astro",
       "./public",
       "astro.config.js",
-      "package.json",
       "biome.json",
       "tsconfig.json"
     ],
@@ -50,6 +50,10 @@
       "include": ["*.astro"],
       "javascript": {
         "globals": ["Astro"]
+      },
+      "formatter": {
+        "enabled": true,
+        "indentStyle": "tab"
       }
     }
   ]

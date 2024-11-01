@@ -4,7 +4,6 @@
 // see the documentation: https://zed.dev/docs/configuring-zed#settings-files
 {
   "format_on_save": "true",
-
   "languages": {
     "JavaScript": {
       "formatter": {
