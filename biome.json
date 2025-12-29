@@ -20,7 +20,7 @@
       "./src/**/*.ts",
       "./src/**/*.astro",
       "./public",
-      "astro.config.js",
+      "astro.config.mjs",
       "biome.json",
       "tsconfig.json"
     ],
@@ -46,6 +46,10 @@
     "formatter": {
       "indentStyle": "space"
     }
+  },
+  "html": {
+    "formatter": { "enabled": true },
+    "experimentalFullSupportEnabled": true
   },
   "overrides": [
     {
