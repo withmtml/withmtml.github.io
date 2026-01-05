@@ -14,21 +14,23 @@
   },
   "formatter": {
     "enabled": true,
-    "include": [
+    "includes": [
       "./.vscode/*.json",
       "./.zed/*.json",
       "./src/**/*.ts",
       "./src/**/*.astro",
       "./public",
-      "astro.config.js",
+      "astro.config.mjs",
       "biome.json",
       "tsconfig.json"
     ],
     "indentStyle": "tab",
     "indentWidth": 2
   },
-  "organizeImports": {
-    "enabled": true
+  "assist": {
+    "actions": {
+      "recommended": true
+    }
   },
   "javascript": {
     "formatter": {
@@ -45,9 +47,25 @@
       "indentStyle": "space"
     }
   },
+  "html": {
+    "formatter": { "enabled": true },
+    "experimentalFullSupportEnabled": true
+  },
   "overrides": [
     {
-      "include": ["*.astro"],
+      "includes": ["**/*.astro"],
+      "linter": {
+        "rules": {
+          "style": {
+            "useConst": "off",
+            "useImportType": "off"
+          },
+          "correctness": {
+            "noUnusedVariables": "off",
+            "noUnusedImports": "off"
+          }
+        }
+      },
       "javascript": {
         "globals": ["Astro"]
       },
