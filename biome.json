@@ -22,7 +22,8 @@
       "./public",
       "astro.config.mjs",
       "biome.json",
-      "tsconfig.json"
+      "tsconfig.json",
+      "package.json"
     ],
     "indentStyle": "tab",
     "indentWidth": 2
